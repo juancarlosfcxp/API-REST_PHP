@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "73969ecc-beaa-41b5-bdb0-9ff52cf14ca0",
+		"name": "PruebasCommentAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll_videojoc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojocs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojocs"
+					]
+				},
+				"description": "obtener todos"
+			},
+			"response": []
+		},
+		{
+			"name": "get_videojoc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojocs/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojocs",
+						"2"
+					]
+				},
+				"description": "getOne"
+			},
+			"response": []
+		},
+		{
+			"name": "add_videojoc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nom",
+							"value": "nombre2post",
+							"type": "text"
+						},
+						{
+							"key": "empresa",
+							"value": "empresa2post",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "autor2post",
+							"type": "text"
+						},
+						{
+							"key": "data_llancament",
+							"value": "2000-01-02",
+							"type": "text"
+						},
+						{
+							"key": "tipus",
+							"value": "action",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojocs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojocs"
+					]
+				},
+				"description": "añadir"
+			},
+			"response": []
+		},
+		{
+			"name": "update_videojoc",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nom",
+							"value": "nombre2Changed",
+							"type": "text"
+						},
+						{
+							"key": "empresa",
+							"value": "empresa2Cambiado",
+							"type": "text"
+						},
+						{
+							"key": "autor",
+							"value": "autor2Cambiado",
+							"type": "text"
+						},
+						{
+							"key": "data_llancament",
+							"value": "2000-01-02",
+							"type": "text"
+						},
+						{
+							"key": "tipus",
+							"value": "action",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojocs/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojocs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_videojoc",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/videojocs/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"videojocs",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll_comentari",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comentaris",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comentaris"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_comentari",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comentaris/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comentaris",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_comentari",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "autor",
+							"value": "autor2",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "05/05/06",
+							"type": "text"
+						},
+						{
+							"key": "videojoc_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "texto",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comentaris",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comentaris"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_comentari",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "autor",
+							"value": "autor2Changed",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "data2Cambiado",
+							"type": "text"
+						},
+						{
+							"key": "videojoc_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "texto cambiado",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comentaris/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comentaris",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_comentari",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comentaris/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comentaris",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getComentariosVideojocs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/commentAPI/videojoc/1/comentaris",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"commentAPI",
+						"videojoc",
+						"1",
+						"comentaris"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autor_Comentarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/commentAPI/comentari?autor=autor3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"commentAPI",
+						"comentari"
+					],
+					"query": [
+						{
+							"key": "autor",
+							"value": "autor3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
